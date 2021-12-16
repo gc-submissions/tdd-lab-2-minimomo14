@@ -5,7 +5,7 @@ function calculateChange (total,payment) {
     //change = change.toFixed(2);
     return change;
 }
-console.log(calculateChange(5,6))
+//console.log(calculateChange(5,6))
 
 function isSufficientPayment(total,payment){
     if (payment >= total) { 
@@ -16,7 +16,7 @@ function isSufficientPayment(total,payment){
     //return isSufficientPayment;
 }
 
-console.log(isSufficientPayment(5,6));
+//console.log(isSufficientPayment(5,6));
 /////////
 
 function calculateTotal (itemsArray) {
@@ -29,8 +29,9 @@ function calculateTotal (itemsArray) {
     };
     //add up the price property
     return total;
-
 };
+
+console.log(calculateTotal({name:"Jelly", price: 4.99}));
 
 //////
 
@@ -42,7 +43,7 @@ function addItem (itemsArray, name, price) {
 ///////
 //removeItem
 function removeItem (itemsArray, index) {
-    itemsArray.splice(index, 1);
+    itemsArray.splice(index, 1); // 1 is the number of object that we wanted to delete not number of index itself.
     return itemsArray;
 }
 
