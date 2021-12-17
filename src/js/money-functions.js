@@ -15,7 +15,7 @@ function formatCurrency (amount) {
 
 function getCoins (cents) {
     let coins = [{quarter:25},{dimes:10},{nickle:5},{pennies:1}];
-    console.log("is this lod ?!",coins)
+    console.log("is this log ?!",coins)
     for (let i=0; i<coins.length; i++){
         cents = cents + coins[i]
     }
